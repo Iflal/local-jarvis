@@ -1,0 +1,59 @@
+{
+  "assistant": {
+    "name": "Jarvis",
+    "require_wake_word": true,
+    "history_messages": 8
+  },
+  "ollama": {
+    "base_url": "http://127.0.0.1:11434",
+    "model": "qwen3.5:2b-q4_K_M",
+    "timeout_seconds": 120,
+    "context_length": 4096,
+    "temperature": 0.2,
+    "think": false
+  },
+  "speech": {
+    "model": "base.en",
+    "device": "cpu",
+    "compute_type": "int8",
+    "beam_size": 3,
+    "initial_prompt": "Jarvis desktop assistant commands about internet access, tools, browser, microphone, mouse, voice, time, date, notes, and reminders.",
+    "sample_rate": 16000,
+    "silence_threshold": 0.015,
+    "start_timeout_seconds": 6.0,
+    "silence_seconds": 0.9,
+    "max_record_seconds": 15.0
+  },
+  "tts": {
+    "enabled": true,
+    "rate": 185,
+    "volume": 1.0,
+    "voice": ""
+  },
+  "vision": {
+    "camera_index": 0,
+    "width": 640,
+    "height": 480
+  },
+  "apps": {
+    "notepad": "notepad.exe",
+    "calculator": "calc.exe",
+    "explorer": "explorer.exe",
+    "paint": "mspaint.exe",
+    "edge": "msedge.exe",
+    "chrome": "chrome.exe"
+  },
+  "websites": {
+    "browser": "https://www.google.com",
+    "google": "https://www.google.com",
+    "youtube": "https://www.youtube.com",
+    "gmail": "https://mail.google.com",
+    "github": "https://github.com"
+  },
+  "search_roots": [
+    "~/Desktop",
+    "~/Documents",
+    "~/Downloads"
+  ],
+  "database": "data/jarvis.db"
+}
